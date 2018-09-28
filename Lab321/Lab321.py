@@ -1,25 +1,29 @@
 def main():
-    myClasses = input('What grade are you in - ')
-    resultAnswer = yearInSchool(myClasses)
+    myClass = (input('What grade are you in '))
+    resultAnswer = yearInSchool(myClass)
+    print('you are ' + resultAnswer)
 
-    print('you are a - ' + resultAnswer)
-
-
-
+    listGrade = [68.2,74.9,86.5,92.5]
+    print (len(listGrade))
+    myListGrade = (input('whats your percent grade in school '))
+    resultGrade = getAverageGrade(myListGrade)
+    print('you are ' + resultGrade)
 
 def yearInSchool(Class):
     if (Class) == '9':
         classResult = 'freshman'
     elif (Class) == '10':
         classResult = 'Sophomore'
-    elif input(11):
-        print('junior')
-    elif input(12):
-        print('senior')
+    elif (Class) == '11':
+        classResult = 'Junior'
+    elif (Class) == '12':
+        classResult = 'Senior'
     else:
-        print('your not in highschool')
+        classResult = 'not in highschool'
+
+    return classResult
 
 
-
-
-
+def getAverageGrade(listGrade):
+    if (listGrade) <
+        GradeResult == ('passing')
