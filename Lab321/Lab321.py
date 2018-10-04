@@ -3,10 +3,10 @@ def main():
     resultAnswer = yearInSchool(myClass)
     print('you are ' + resultAnswer)
 
-    listGrade = [68.2,74.9,86.5,92.5]
-    print (len(listGrade))
-    myListGrade = (input('whats your percent grade in school '))
-    resultGrade = getAverageGrade(myListGrade)
+    myList = [62.1,74.9,86.5,92.5]
+    print (len(myList))
+    myList = (input('whats your percent grade in school '))
+    resultGrade = getAverageGrade(myList)
     print('you are ' + resultGrade)
 
 def yearInSchool(Class):
@@ -24,6 +24,18 @@ def yearInSchool(Class):
     return classResult
 
 
-def getAverageGrade(listGrade):
-    if (listGrade) <
-        GradeResult == ('passing')
+def getAverageGrade(list):
+    if (list) >= '92.5':
+        listResult = 'passing'
+    elif (list) >= '86.5':
+        listResult = 'passing'
+    elif (list) >= '74.9':
+        listResult = 'passing'
+    elif (list) >= '62.1':
+        listResult = 'failing'
+    else:
+        listResult = 'failing'
+
+    return listResult
+
+main()
