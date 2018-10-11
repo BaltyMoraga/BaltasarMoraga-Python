@@ -2,6 +2,11 @@ def main():
    vowel = input('whats your string')
    print(vowel)
    print(deVowel(vowel))
+   input('pause')
+
+   list = [1,2,3,4]
+   m = 2
+   print(mathStuff(list, m))
 
 def deVowel(vowel):
     noVowel = ''
@@ -11,4 +16,11 @@ def deVowel(vowel):
         else:
             noVowel = noVowel + x
     return (noVowel)
+
+def mathStuff(list, m):
+    listf = []
+    for x in list:
+        listf.append(float(x) * float(m))
+    return(listf)
+
 main()
