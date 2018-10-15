@@ -1,19 +1,23 @@
-num = input('how many numbers? - ')
-print(num)
-numList = []
+def main():
+    myLists = [54.9,66.1,74.9,86.5,92.5]
+    print(len(myLists))
+    myLists = (input('what is your percent grade again?'))
+    resultLetter = getLetterGrade(myLists)
+    print('you have an ' + resultLetter)
 
-for i in range(0, int(num)):
-    myNum = input('number please - ')
-    numList.append(int(myNum))
-    print(myNum)
 
-total = 0
-for i in numList:
-    total = total + 1
-    print('i = ' + str(i))
-    print('total = ' + str(total))
-    input('pause')
+def getLetterGrade(lists):
+    if (lists) >= '92.5':
+        listResults = 'A'
+    elif (lists) >= '86.5':
+        listResults = 'B'
+    elif (lists) >= '74.9':
+        listResults = 'C'
+    elif (lists) >= '66.1':
+        listResults = 'D'
+    else:
+        listResults = 'F'
 
-average = total / int(num)
-print('total ' + str(total + ' / ' + num))
-print(average)
+    return listResults
+
+main()

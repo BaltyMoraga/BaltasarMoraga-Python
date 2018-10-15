@@ -3,6 +3,8 @@ def main():
     resultAnswer = yearInSchool(myClass)
     print('you are ' + resultAnswer)
 
+    getAverageGrade()
+
     myLists = [54.9,66.1,74.9,86.5,92.5]
     print(len(myLists))
     myLists = (input('what is your percent grade again?'))
@@ -36,24 +38,24 @@ def getAverageGrade():
 
     total = 0
     for i in numList:
-        total = total + 1
+        total = total + i
         print('i = ' + str(i))
         print('total = ' + str(total))
         input('pause')
 
     average = total / int(num)
-    print('total ' + str(total + ' / ' + num))
+    print('total ' + str(total) + ' / ' + num)
     print(average)
 
 
 def getLetterGrade(lists):
-    if (lists) <= '92.5':
+    if (lists) >= '92.5':
         listResults = 'A'
-    elif (lists) <= '86.5':
+    elif (lists) >= '86.5':
         listResults = 'B'
-    elif (lists) <= '74.9':
+    elif (lists) >= '74.9':
         listResults = 'C'
-    elif (lists) <= '66.1':
+    elif (lists) >= '66.1':
         listResults = 'D'
     else:
         listResults = 'F'
