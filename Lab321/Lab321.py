@@ -5,6 +5,15 @@ def main():
 
     getAverageGrade()
 
+    num1 = input('how many numbers - ')
+    grades = []
+    for x in range (0,int(num1)):
+        myGrades = input('grade')
+        grades.append(myGrades)
+    print(grades)
+    answerGpa = getGpaFunction(grades)
+    print('my Gpa is ' + str(answerGpa))
+
     myLists = [54.9,66.1,74.9,86.5,92.5]
     print(len(myLists))
     myLists = (input('what is your percent grade again?'))
@@ -46,6 +55,15 @@ def getAverageGrade():
     average = total / int(num)
     print('total ' + str(total) + ' / ' + num)
     print(average)
+
+
+def getGpaFunction(myGrades):
+    total = 0
+    for x in myGrades:
+        total += float(x)
+    gradeAverage = ((total) / len(myGrades))
+
+    return gradeAverage
 
 
 def getLetterGrade(lists):
