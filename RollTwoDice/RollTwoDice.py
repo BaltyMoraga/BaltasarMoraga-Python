@@ -26,7 +26,7 @@ def main():
 def defineDice():
     dice = [0] * 6
     topBot = ' ------- '
-    blank  = '|       |'
+    blank =  '|       |'
     oneDotL= '| *     |'
     oneDotM= '|   *   |'
     oneDotR= '|     * |'
@@ -54,11 +54,10 @@ def rollDice():
     return diceNum
 
 def printDiceSideBySide(diceSet):
-    print('print dice')
+    print(diceSet)
     for row in range(0,0):
         for col in range(0,0):
             print(diceSet[col][row], end = '\t')
         print()
-
 
 main()
