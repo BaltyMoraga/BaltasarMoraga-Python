@@ -1,8 +1,9 @@
 import turtle
 
+turtle.setup(width=750, height=700)
 turtle.title('turtle drawing')
 turtle.bgcolor ('black')
-turtle.speed(500)
+turtle.speed(50)
 
 def main():
     line()
@@ -42,17 +43,14 @@ def circle():
 
 def triangle():
     turtle.penup()
-    turtle.goto(-200,-135)
+    turtle.goto(-200,-130)
     turtle.pendown()
-    turtle.color(1.0,2.0,0.0)
+    turtle.color(0.1,1.0,0.6)
     turtle.forward(400)
     turtle.left(120)
     turtle.forward(400)
     turtle.left(120)
     turtle.forward(400)
     turtle.left(120)
-
-
-
 
 main()
