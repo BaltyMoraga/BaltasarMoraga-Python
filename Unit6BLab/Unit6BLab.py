@@ -10,3 +10,14 @@ Weekend = {'Jan 2018' : [6,7,13,14,20,21,27,28],
            'Oct 2018' : [6,7,13,14,20,21,27,28],
            'Nov 2018' : [3,4,10,11,17,18,24,25],
            'Dec 2018' : [1,2,8,9,15,16,22,23,29,30]}
+
+d = 1
+x = input("Enter birthday month - ")
+y = int(input("Enter brthday date - "))
+for b in Weekend :
+    if b==x :
+        for c in Weekend[b] :
+             if c==y :
+                print("Your Birthday is on a weekend!")
+if d==1 :
+    print("Your birthday isn't a weekend!")
