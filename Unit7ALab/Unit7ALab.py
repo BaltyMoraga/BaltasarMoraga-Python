@@ -12,15 +12,25 @@ class Pet():
         return(self.name)
     def getBreed(self):
         return(self.breed)
-
+    def whatIsIt(self):
+        print(self.petType)
+        print(self.getType())
+        print(self.getName())
+        print(self.getBreed())
 
 myPet1 = Pet('dog','corona','scotish terrier')
-print(myPet1.petType)
-print(myPet1.getType())
-print(myPet1.getName())
-print(myPet1.getBreed())
+myPet1.whatIsIt()
 
-myPet2 = Pet('cat','')
+input('----------')
+
+myPet2 = Pet('cat','sally','egyptian mau')
+print(myPet2.petType)
+print(myPet2.getType())
+print(myPet2.getName())
+print(myPet2.getBreed())
+
+input('----------')
+
 class Cage():
     petType = 'caged pet'
 
@@ -31,5 +41,20 @@ class Cage():
     def getType(self):
         return(self.type)
     def getDanger(self):
-        return(self.danger)
+        if self.danger == 'true':
+            return('Is Dangerous')
+        elif self.danger == 'false':
+            return ('Isnt Dangerous')
 
+
+myCagedPet1 = Cage('snake','true')
+print(myCagedPet1.petType)
+print(myCagedPet1.getType())
+print(myCagedPet1.getDanger())
+
+input('----------')
+
+myCagedPet2 = Cage('rat','false')
+print(myCagedPet2.petType)
+print(myCagedPet2.getType())
+print(myCagedPet2.getDanger())
