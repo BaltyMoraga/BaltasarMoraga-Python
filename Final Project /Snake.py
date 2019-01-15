@@ -1,4 +1,4 @@
-import pygame, sys, random, time
+import pygame,sys,random,time
 
 check_errors = pygame.init()
 if check_errors[1] > 0:
@@ -30,10 +30,10 @@ changeto = direction
 score = 0
 
 def gameOver():
-	myFont = pygame.font.SysFont('lol', 72)
+	myFont = pygame.font.SysFont('W', 72)
 	GOsurf = myFont.render('Game over!', True, red)
 	GOrect = GOsurf.get_rect()
-	GOrect.midtop = (360, 15)
+	GOrect.midtop = (500, 15)
 	playSurface.blit(GOsurf, GOrect)
 	showScore(0)
 	pygame.display.flip()
@@ -43,7 +43,7 @@ def gameOver():
 	sys.exit()
 
 def showScore(choice=1):
-	sFont = pygame.font.SysFont('lol', 24)
+	sFont = pygame.font.SysFont('W', 24)
 	Ssurf = sFont.render('Score : {0}'.format(score), True, white)
 	Srect = Ssurf.get_rect()
 	if choice == 1:
@@ -117,4 +117,4 @@ while True:
 	showScore()
 	pygame.display.flip()
 	
-	fpsController.tick(24)
+	fpsController.tick(25)
